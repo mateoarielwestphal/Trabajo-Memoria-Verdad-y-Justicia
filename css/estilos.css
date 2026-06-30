@@ -1,0 +1,99 @@
+/* Variables y Fuentes */
+:root {
+    --navy-blue: #1A2B4A;
+    --sky-blue: #6CACE4;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-100: #f1f5f9;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--slate-100);
+    color: var(--slate-800);
+}
+
+/* Navbar */
+.navbar.bg-dark {
+    background-color: var(--slate-900) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--slate-900), var(--navy-blue));
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--sky-blue);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--navy-blue);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #121e33;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 43, 74, 0.3);
+}
+
+.btn-light {
+    color: var(--navy-blue);
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Tarjetas (Timeline y Testimonios) */
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    color: var(--navy-blue);
+    font-weight: 600;
+}
+
+/* Secciones específicas */
+.bg-light {
+    background-color: var(--white) !important;
+}
+
+#testimonios {
+    background-color: var(--slate-100) !important;
+}
+
+#adhesion.bg-dark {
+    background-color: var(--slate-900) !important;
+}
